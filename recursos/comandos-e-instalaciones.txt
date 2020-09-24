@@ -1,0 +1,19 @@
+https://nodejs.org/en/
+Comprobar instalación de NodeJS:
+node --version
+
+https://cli.angular.io/
+
+Instalación Angular:
+npm install -g @angular/cli
+
+Comprobar instalación de Angular:
+ng --version
+
+Crear primer proyecto:
+ng new <nombre del proyecto>
+cd <nombre del proyecto>
+ng serve
+
+Visual Studio Code:
+https://code.visualstudio.com/
