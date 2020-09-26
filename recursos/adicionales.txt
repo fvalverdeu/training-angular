@@ -1,0 +1,8 @@
+https://angular.io/
+
+https://stackblitz.com/
+
+https://www.typescriptlang.org/
+
+Ejemplo de clases y objetos en TS
+https://stackblitz.com/edit/ts-class-example?file=index.ts
