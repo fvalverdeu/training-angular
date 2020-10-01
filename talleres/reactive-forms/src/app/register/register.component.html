@@ -1,0 +1,27 @@
+<div class="container">
+  <form [formGroup]="myGroup" (ngSubmit)="register()">
+    <input
+      type="text"
+      placeholder="Nombre"
+      name="fullName"
+      formControlName="fullName"
+    >
+    <span *ngIf="myGroup.get('fullName').touched">Campo requerido</span>
+    <br>
+    <input
+      type="text"
+      placeholder="Usuario"
+      name="user"
+      formControlName="user">
+      <span *ngIf="myGroup.get('user').invalid">Campo requerido</span>
+    <br>
+    <input
+      type="password"
+      placeholder="Contraseña"
+      name="password"
+      formControlName="password">
+      <span *ngIf="myGroup.get('password').invalid">Campo requerido</span>
+    <br>
+    <button type="submit">Registrar</button>
+  </form>
+</div>

@@ -1,0 +1,7 @@
+.container {
+  margin: 0 auto;
+}
+
+.ng-touched {
+  border: 1px solid ;
+}
