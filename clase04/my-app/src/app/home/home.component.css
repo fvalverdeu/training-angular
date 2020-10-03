@@ -1,0 +1,9 @@
+.container {
+
+}
+
+.card {
+  margin: 5%;
+  width: 28%;
+  display: inline-flex;
+}
