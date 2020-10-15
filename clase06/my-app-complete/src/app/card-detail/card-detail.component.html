@@ -1,0 +1,22 @@
+<div class="card">
+  <h2>Biography</h2>
+  <h2>FullName: {{ detail.fullName }}</h2>
+
+  <label for="">alterEgos:</label>
+  <p> {{ detail.alterEgos }} </p>
+
+  <label for="">aliases:</label>
+  <p *ngFor="let item of detail.aliases"> {{ item }} </p>
+
+  <label for="">placeOfBirth:</label>
+  <p> {{ detail.placeOfBirth }} </p>
+
+  <label for="">firstAppearance:</label>
+  <p> {{ detail.firstAppearance }} </p>
+
+  <label for="">publisher:</label>
+  <p> {{ detail.publisher }} </p>
+
+  <label for="">alignment:</label>
+  <p> {{ detail.alignment }} </p>
+</div>

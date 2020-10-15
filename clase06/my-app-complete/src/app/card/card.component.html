@@ -1,0 +1,27 @@
+<div class="card">
+  <h2>{{ hero.id }}. {{ hero.name }}</h2>
+  <img src="{{ hero.images.sm }}" alt="">
+  <br>
+  <label for="">Name:</label>
+  <p> {{ hero.name }} </p>
+
+  <h3 for="">Power Stats:</h3>
+  <div class="statBox">
+    <p for="">Intelligence:</p>
+    <p> {{ hero.powerstats.intelligence }} </p>
+    <div class="stat">
+      <div class="stat-level" style="width: 90%;"></div>
+    </div>
+  </div>
+
+  <label for="">strength:</label>
+  <p> {{ hero.powerstats.strength }} </p>
+  <label for="">speed:</label>
+  <p> {{ hero.powerstats.speed }} </p>
+  <label for="">durability:</label>
+  <p> {{ hero.powerstats.durability }} </p>
+  <label for="">power:</label>
+  <p> {{ hero.powerstats.power }} </p>
+  <label for="">combat:</label>
+  <p> {{ hero.powerstats.combat }} </p>
+</div>
