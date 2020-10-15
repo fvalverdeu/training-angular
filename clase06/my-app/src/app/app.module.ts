@@ -12,6 +12,7 @@ import { ContactComponent } from './contact/contact.component';
 import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { CardDetailComponent } from './card-detail/card-detail.component';
+import { StatComponent } from './stat/stat.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { CardDetailComponent } from './card-detail/card-detail.component';
     AboutComponent,
     ContactComponent,
     HomeComponent,
-    CardDetailComponent
+    CardDetailComponent,
+    StatComponent
   ],
   imports: [
     BrowserModule,

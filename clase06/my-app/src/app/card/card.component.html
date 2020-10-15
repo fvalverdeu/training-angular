@@ -1,22 +1,13 @@
 <div class="card">
-  <h2>Título</h2>
-  <label for="">ID:</label>
-  <p>{{ hero.id }}</p>
-  <br>
-  <label for="">Name:</label>
-  <p> {{ hero.name }} </p>
+  <h2>{{ hero.id }}. {{ hero.name }} </h2>
+  <img src="{{hero.images.sm}}" alt="" (click)="redirect()">
+  <h3 for="">Power Stats:</h3>
 
-  <label for="">Power Stats:</label>
-  <label for="">Intelligence:</label>
-  <p> {{ hero.powerstats.intelligence }} </p>
-  <label for="">strength:</label>
-  <p> {{ hero.powerstats.strength }} </p>
-  <label for="">speed:</label>
-  <p> {{ hero.powerstats.speed }} </p>
-  <label for="">durability:</label>
-  <p> {{ hero.powerstats.durability }} </p>
-  <label for="">power:</label>
-  <p> {{ hero.powerstats.power }} </p>
-  <label for="">combat:</label>
-  <p> {{ hero.powerstats.combat }} </p>
+  <app-stat title="Intelligence" [powerLevel]="hero.powerstats.intelligence"></app-stat>
+  <app-stat title="strength" [powerLevel]="hero.powerstats.strength"></app-stat>
+  <app-stat title="speed" [powerLevel]="hero.powerstats.speed"></app-stat>
+  <app-stat title="durability" [powerLevel]="hero.powerstats.durability"></app-stat>
+  <app-stat title="power" [powerLevel]="hero.powerstats.power"></app-stat>
+  <app-stat title="combat" [powerLevel]="hero.powerstats.combat"></app-stat>
+  <!-- {{hero.powerstats.intelligence | json}} -->
 </div>
