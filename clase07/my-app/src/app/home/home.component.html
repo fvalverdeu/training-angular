@@ -1,0 +1,6 @@
+<div class="container">
+  <app-biography [show]="show"></app-biography>
+  <div class="card" *ngFor="let item of cards">
+    <app-card [hero]="item" (showModal)="toogleShow($event)"></app-card>
+  </div>
+</div>

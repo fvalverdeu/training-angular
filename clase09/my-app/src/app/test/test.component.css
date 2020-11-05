@@ -1,0 +1,27 @@
+:host {
+  display: block;
+  padding: 2%;
+  /* border: 1px solid blue; */
+}
+
+.test {
+  /* height: 200px;
+  width: 300px; */
+  /* outline: 1px solid green; */
+}
+
+input {
+  font-size: 2rem;
+}
+
+.container {
+  border: 1px solid red;
+  width: 22%;
+  display: inline-flex;
+  margin-right: 4%;
+  height: 200px;
+}
+
+.container:not(:nth-last-child(4n + 1)) {
+  margin-right: 4%;
+}

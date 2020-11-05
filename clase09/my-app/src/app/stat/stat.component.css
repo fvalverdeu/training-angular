@@ -1,0 +1,44 @@
+:host {
+  height: 16px;
+  padding: 0;
+}
+
+.statBox {
+  display: flex;
+  box-sizing: border-box;
+  width: 300px;
+  padding: 0% 2%;
+}
+
+.statBox p {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  width: 80px;
+  text-align: right;
+  font-size: 0.8rem;
+}
+
+.statBox p.level{
+  width: 25px;
+  text-align: left;
+}
+
+.stat {
+  background-color: rgb(253, 246, 235);
+  box-sizing: border-box;
+  border-radius: 25px;
+  border: 1px solid rgb(253, 246, 235);
+  width: 160px;
+  height: 8px;
+  margin: 2% 3% 3% 3%;
+}
+
+.stat-level {
+  background-color: greenyellow;
+  box-sizing: border-box;
+  border-radius: 25px;
+  width: 100%;
+  height: 8px;
+  border: 1px solid greenyellow;
+}

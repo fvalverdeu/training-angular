@@ -1,0 +1,13 @@
+h2 {
+  text-align: center;
+}
+
+h4 {
+  padding-left: 3%;
+  margin-top: 10px;
+}
+
+.card {
+  background-color: rgb(253, 246, 235);
+  width: 100%;
+}

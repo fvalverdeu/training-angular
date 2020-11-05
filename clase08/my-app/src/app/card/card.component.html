@@ -1,0 +1,14 @@
+<div class="card">
+  <h2>{{ hero.id }}. {{ hero.name }} </h2>
+  <img src="{{hero.images.sm}}" alt="" (click)="openModal()">
+  <h4>Power Stats:</h4>
+  <div class="content-stats">
+    <app-stat title="Intelligence" [powerLevel]="hero.powerstats.intelligence"></app-stat>
+    <app-stat title="strength" [powerLevel]="hero.powerstats.strength"></app-stat>
+    <app-stat title="speed" [powerLevel]="hero.powerstats.speed"></app-stat>
+    <app-stat title="durability" [powerLevel]="hero.powerstats.durability"></app-stat>
+    <app-stat title="power" [powerLevel]="hero.powerstats.power"></app-stat>
+    <app-stat title="combat" [powerLevel]="hero.powerstats.combat"></app-stat>
+  </div>
+  <!-- {{hero.powerstats.intelligence | json}} -->
+</div>
