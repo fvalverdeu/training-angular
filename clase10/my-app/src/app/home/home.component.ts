@@ -30,11 +30,16 @@ export class HomeComponent implements OnInit {
     // console.log('getResponse', this.cards);
   }
 
-  showModal(idHero: number): void {
+  showModal(hero: IHero): void {
     this.show = true;
-    this.heroService.getOne(idHero).subscribe(res => {
+    this.heroService.getOne(hero.id).subscribe(res => {
       this.heroDetail = res;
+      this.heroDetail.sm = hero.images.sm;
     }, error => console.log(error));
+  }
+
+  closeModal(): void {
+    this.show = false;
   }
 
 }

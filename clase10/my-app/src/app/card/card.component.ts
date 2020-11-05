@@ -10,7 +10,7 @@ import { IHero } from '../interfaces/hero.interface';
 export class CardComponent implements OnInit {
 
   @Input() hero: IHero;
-  @Output() showModal: EventEmitter<number> = new EventEmitter<number>();
+  @Output() showModal: EventEmitter<IHero> = new EventEmitter<IHero>();
   description: string;
 
   constructor(private router: Router) {}
@@ -26,6 +26,6 @@ export class CardComponent implements OnInit {
   }
 
   openModal(): void {
-    this.showModal.emit(this.hero.id);
+    this.showModal.emit(this.hero);
   }
 }

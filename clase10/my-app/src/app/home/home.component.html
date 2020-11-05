@@ -1,5 +1,6 @@
 <div class="container">
-  <app-card-detail [show]="show" [detail]="heroDetail"></app-card-detail>
+  <app-card-detail [show]="show" [detail]="heroDetail" (closed)="closeModal()"></app-card-detail>
+  <!-- <app-card-detail [show]="show" [detail]="heroDetail" (closed)="!show"></app-card-detail> -->
   <div class="card" *ngFor="let item of cards">
     <app-card [hero]="item" (showModal)="showModal($event)"></app-card>
   </div>

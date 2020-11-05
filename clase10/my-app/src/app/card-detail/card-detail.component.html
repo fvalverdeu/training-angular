@@ -2,11 +2,12 @@
   <div class="container">
     <div>
       <div class="modal-header">
-        <h4>{{ detail?.fullName }}</h4>
+        <h4>{{ detail?.fullName}}</h4>
+        <!-- {{ detail | json }} -->
         <button (click)="close()" class="btn btn-danger todo-close">x</button>
       </div>
       <div class="modal-content">
-        <img src="https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/728-ymir.jpg">
+        <img [src]="detail?.sm">
         <div class="modal-bio">
           <p><strong>alterEgos:</strong>{{ detail?.alterEgos }}</p>
           <p><strong>aliases:</strong>{{ detail?.aliases }}</p>

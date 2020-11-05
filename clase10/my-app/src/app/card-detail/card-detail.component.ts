@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { IHeroDetail } from '../interfaces/hero.interface';
 
 @Component({
@@ -15,6 +15,7 @@ export class CardDetailComponent implements OnInit {
 
   @Input() show: boolean;
   @Input() detail: IHeroDetail;
+  @Output() closed: EventEmitter<void> = new EventEmitter<void>();
 
   constructor() { }
 
@@ -22,7 +23,8 @@ export class CardDetailComponent implements OnInit {
   }
 
   close(): void {
-    this.show = false;
+    // this.show = false;
+    this.closed.emit();
   }
 
 }
